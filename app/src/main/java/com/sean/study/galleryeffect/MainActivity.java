@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
                     //获取最后一个可见条目的角标
                     mLastVisibleItem = linearLayoutManager.findLastVisibleItemPosition();
+                    if(mLastVisibleItem + 1 == linearLayoutManager.getItemCount()){
+                        //刷新操作
+                    }
                 }
 
             }
